@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="background: rgba(58,0,219,1);
+background: linear-gradient(to right, rgba(58,0,219,1) 0%, rgba(151,132,215,1) 86%, rgba(157,124,233,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a00db', endColorstr='#9d7ce9', GradientType=1 );
+height: 1920px" 
+>>
+<head>
+ <title>Divisible Numbers</title>
+</head>
+<div>
+<body>
+ <div style="display:flex;justify-content:center;align-items:center; margin-top: 15%;">
+    <p id="demo"></p>
+    <input type="number" name="" placeholder="value:" id="integer">
+    <button  onclick="divisibleNumbers()">Click</button>
+</div>
+
+<script>
+  function divisibleNumbers() {
+            var value = document.getElementById("integer").value;
+            var result = ""
+            for(var i = 1;i <= value;i++){
+                if(value % i == 0){
+                    result += i + " ";
+                }
+            }
+            document.getElementById("demo").innerHTML = result;
+        }
+</script>
+</body>
+</div>
+
+</html>
